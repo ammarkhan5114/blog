@@ -22,17 +22,16 @@
           </div>
           <nav>
             <div class="menu">
-              <a href="/">Home</a>
+              <a href="./index.html">Home</a>
               <a href="./about.html">About</a>
               <a href="./blogs.html">Blogs</a>
-              <a href="./articles.html">Articles</a>
             </div>
           </nav>
         </div>
       </header>
   <main>
     <section id="contact-section">
-      <form class="contact-form" id="contactForm" method="get">
+      <form method="get">
         <div class="input-group">
           <input type="text" id="name" name="name" required placeholder="Your Name">
         </div>
@@ -44,8 +43,7 @@
           <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
         </div>
 
-        <button type="button" class="submit-btn" id="submitBtn">
-          <span>Send Message</span>
+        <button type="submit" class="submit-btn" id="submitBtn">Send Message
         </button>
       </form>
 
@@ -100,6 +98,10 @@
 <script>
   let params = new URLSearchParams(window.location.search);
   params.get('id');
+  
+  
+
+
 </script>
 
 </html>

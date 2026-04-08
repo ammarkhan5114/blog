@@ -257,6 +257,7 @@ header {
 
 main {
   text-align: center;
+  margin-bottom: 100px;
 }
 
 section {
@@ -358,7 +359,6 @@ section {
 }
 
 .footer {
-  margin-top: 80px;
   padding: 60px 40px;
   background: linear-gradient(90deg, #111827, #0f172a);
   border-top: 1px solid var(--border-color);
@@ -424,6 +424,10 @@ section {
 .socials a:hover {
   background: var(--accent-color);
   transform: translateY(-4px);
+}
+
+.socials a:hover i {
+  color: var(--bg-color);
 }
 
 
