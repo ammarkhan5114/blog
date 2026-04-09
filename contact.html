@@ -11,24 +11,25 @@
 
 <body>
   <header>
-        <div class="container">
-          <div class="logo-cont">
-            <i class="bi bi-mailbox2-flag"></i>
-            <h1>Blog Post</h1>
-          </div>
-          <div class="search-cont">
-            <i class="bi bi-search"></i>
-            <input type="search" placeholder="Search blogs or articles..." />
-          </div>
-          <nav>
-            <div class="menu">
-              <a href="./index.html">Home</a>
-              <a href="./about.html">About</a>
-              <a href="./blogs.html">Blogs</a>
-            </div>
-          </nav>
+    <div class="container">
+      <div class="logo-cont">
+        <i class="bi bi-mailbox2-flag"></i>
+        <h1>Blog Post</h1>
+      </div>
+      <div class="search-cont">
+        <i class="bi bi-search"></i>
+        <input type="search" placeholder="Search blogs or articles..." />
+      </div>
+      <nav>
+        <div class="menu">
+          <a href="/">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./blogs.html">Blogs</a>
+          <button onclick="Contact('contact')">Contact</button>
         </div>
-      </header>
+      </nav>
+    </div>
+  </header>
   <main>
     <section id="contact-section">
       <form method="get">
@@ -50,56 +51,57 @@
     </section>
   </main>
 
-    <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-content">
-            <h2>Blog Post</h2>
-            <p>
-              Welcome to Blog Post — your daily source of ideas, knowledge, and
-              inspiration. Here, you,ll find engaging articles on technology,
-              lifestyle, creativity, and more. Whether you're looking to learn
-              something new, stay updated, or explore fresh perspectives, Blog
-              Post brings you simple, useful, and interesting content all in one
-              place.
-            </p>
-            <div class="socials">
-              <a href="#"><i class="bi bi-facebook"></i></a> <a href="#"><i class="bi bi-twitter-x"></i></a> <a href="#"><i class="bi bi-youtube"></i></a>
-            </div>
-          </div>
-          <div class="footer-content">
-            <h3>QUICK LINKS</h3>
-            <ul>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Community</a></li>
-              <li><a href="#">Roadmap</a></li>
-            </ul>
-          </div>
-          <div class="footer-content">
-            <h3>COMPARE</h3>
-            <ul>
-              <li><a href="#">Kinsta</a></li>
-              <li><a href="#">Cloudways</a></li>
-              <li><a href="#">Flywheel</a></li>
-            </ul>
-          </div>
-          <div class="footer-content">
-            <h3>LEARN</h3>
-            <ul>
-              <li><a href="#">Docs</a></li>
-              <li><a href="#">Security</a></li>
-              <li><a href="#">Guides</a></li>
-            </ul>
-          </div>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <h2>Blog Post</h2>
+        <p>
+          Welcome to Blog Post — your daily source of ideas, knowledge, and
+          inspiration. Here, you,ll find engaging articles on technology,
+          lifestyle, creativity, and more. Whether you're looking to learn
+          something new, stay updated, or explore fresh perspectives, Blog
+          Post brings you simple, useful, and interesting content all in one
+          place.
+        </p>
+        <div class="socials">
+          <a href="#"><i class="bi bi-facebook"></i></a> <a href="#"><i class="bi bi-twitter-x"></i></a> <a href="#"><i
+              class="bi bi-youtube"></i></a>
         </div>
-      </footer>
+      </div>
+      <div class="footer-content">
+        <h3>QUICK LINKS</h3>
+        <ul>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h3>COMPARE</h3>
+        <ul>
+          <li><a href="#">Kinsta</a></li>
+          <li><a href="#">Cloudways</a></li>
+          <li><a href="#">Flywheel</a></li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h3>LEARN</h3>
+        <ul>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Guides</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 
 <script>
   let params = new URLSearchParams(window.location.search);
   params.get('id');
-  
-  
+
+
 
 
 </script>
