@@ -30,8 +30,52 @@
             </nav>
         </div>
     </header>
+    <main>
+        <section>
+            <div class="sec2hero"></div>
+        </section>
+        <section class="section">
+            <div class="fix-container">
+                <h2><i class="bi bi-laptop"></i>Tech Blogs</h2>
+                <p>
+                    Stay updated with the latest tech trends, tools, and
+                    innovations.<br />Simple and useful content to keep you ahead.
+                </p>
 
+                <div class="cards" id="cards-cont-tech">
 
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="fix-container">
+                <h2><i class="bi bi-controller"></i>Gaming Blogs</h2>
+                <p>
+                    Discover game updates, tips, and reviews.<br />Level up your
+                    gaming skills.
+                </p>
+
+                <div class="cards" id="cards-cont-gaming">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="productivity">
+            <div class="fix-container">
+                <h2><i class="bi bi-bar-chart"></i>Productivity</h2>
+                <p>
+                    Learn smart ways to manage time and stay focused.<br />Boost your
+                    efficiency daily.
+                </p>
+
+                <div class="cards" id="cards-cont-prod">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-content">
@@ -76,7 +120,13 @@
             </div>
         </div>
     </footer>
+    <script>
+      function Contact(id) {
+        window.location.href = `contact.html?id=${encodeURIComponent(id)}`
+      };
+    </script>
 
+    <script src="./script.js"></script>
 </body>
 
 </html>

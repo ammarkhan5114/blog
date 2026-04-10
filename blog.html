@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h2 id="heading"></h2>
+
+    <div id="container">
+    </div>
+    <script>
+        const heading = document.getElementById('heading');
+        const container = document.getElementById('container');
+        let param = new URLSearchParams(window.location.search);
+        let title = param.get('title');
+        let blog = param.get('mainBlog');
+        let category = param.get('category');
+        let image = param.get('image');
+        heading.innerText = title;
+        let para = document.createElement("p");
+        let img = document.createElement("img");
+        let tag = document.createElement("span");
+        tag.textContent = category;
+        // console.log(img);
+        img.setAttribute('src', image)
+        
+        para.textContent = blog;
+        container.appendChild(img);
+        container.appendChild(para);
+        heading.appendChild(tag);
+    </script>
+</body>
+
+</html>

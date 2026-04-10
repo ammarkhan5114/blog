@@ -10,38 +10,36 @@
 </head>
 
 <body>
-    <section id="contact-section">
-      <div class="backbtn">
-        <a href="./index.html"><i class="bi bi-arrow-left" id="back"></i>
-        </a>
-        <span>back to home</span>
+  <section id="contact-section">
+    <div class="backbtn">
+      <a href="./index.html"><i class="bi bi-arrow-left" id="back"></i>
+      </a>
+      <span>back to home</span>
+    </div>
+    <form method="get">
+      <div class="input-group">
+        <input type="text" id="name" required placeholder="Your Name">
       </div>
-      <form method="get">
-        <div class="input-group">
-          <input type="text" id="name" name="name" required placeholder="Your Name">
-        </div>
-        <div class="input-group">
-          <input type="email" id="email" name="email" required placeholder="Your Email">
-        </div>
+      <div class="input-group">
+        <input type="email" id="email" required placeholder="Your Email">
+      </div>
 
-        <div class="input-group">
-          <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
-        </div>
+      <div class="input-group">
+        <textarea id="message" rows="4" required placeholder="Your Message"></textarea>
+      </div>
 
-        <button type="submit" class="submit-btn" id="submitBtn">Send Message
-        </button>
-      </form>
+      <button type="submit" class="submit-btn" id="submitBtn" onclick="watch()">Send Message
+      </button>
+    </form>
 
-    </section>
+  </section>
 
-  
+
 </body>
 
 <script>
   let params = new URLSearchParams(window.location.search);
   params.get('id');
-
-
 
 
 </script>
