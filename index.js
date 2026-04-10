@@ -1,6 +1,4 @@
-let cardsContTech = document.getElementById('cards-cont-tech');
-let cardsContGaming = document.getElementById('cards-cont-gaming');
-let cardsContProd = document.getElementById('cards-cont-prod');
+
 let homeCardsContTech = document.getElementById('homecards-cont-tech');
 let homeCardsContGaming = document.getElementById('homecards-cont-gaming');
 let homeCardsContProd = document.getElementById('homecards-cont-prod');
@@ -78,78 +76,6 @@ let blogsData = [
         category: "productivity",
         mainBlog: "A balanced daily routine improves mental health and boosts productivity by establishing consistent habits. Key tips include maintaining a fixed sleep schedule, hydrating immediately upon waking, scheduling movement breaks, and prioritizing the top three tasks daily. A structured routine helps manage stress and enhances energy levels. "
     },
-    {
-        title: "AI Tools in 2026",
-        desc: "Popular AI tools changing the industry.",
-        image: "https://img.freepik.com/premium-photo/happy-new-year-2026-ai-seo-more-advanced-technology-concept-2026-desk-calendar-with-cute-3d-chat-robot-chatbot-efficiency-automated-analysis-data-tools-magnifying-glass-blue-background_36367-11206.jpg?w=1480",
-        index: 10,
-        category: "tech",
-        mainBlog: "AI tools in 2026 help with coding, design, and writing tasks. They increase productivity and reduce manual effort. Tools like AI assistants are widely used in businesses. Automation is becoming the new standard."
-    },
-    {
-        title: "Cloud Computing Basics",
-        desc: "Understanding cloud technology easily.",
-        image: "https://img.freepik.com/premium-vector/cloud-storage-with-laptop-isometric-data-center-with-data-exchange-hosting-cloud-service-app-network-with-computing-technologies-saas-networks-softs-programs-vector-banner_115579-1743.jpg?ga=GA1.1.172384037.1770370751&semt=ais_hybrid&w=740&q=80d",
-        index: 11,
-        category: "tech",
-        mainBlog: "Cloud computing allows storage and computing over the internet. It reduces hardware dependency for companies. Services like SaaS and IaaS are widely used. It offers scalability and cost efficiency."
-    },
-    {
-        title: "Latest Programming Trends",
-        desc: "Trends shaping software development.",
-        image: "https://img.freepik.com/free-photo/programming-background-collage_23-2149901770.jpg?ga=GA1.1.172384037.1770370751&semt=ais_hybrid&w=740&q=80",
-        index: 12,
-        category: "tech",
-        mainBlog: "Modern programming focuses on AI integration and automation. JavaScript and Python remain highly popular. Low-code platforms are growing fast. Developers now focus more on problem-solving than syntax."
-    },
-    {
-        title: "Esports Growth",
-        desc: "Rise of competitive gaming worldwide.",
-        image: "https://img.freepik.com/free-photo/group-multiracial-teens-headsets-playing-video-games-video-game-club-with-blue-red-illumination-keyboard-mouse-with-illumination_1268-24588.jpg?ga=GA1.1.172384037.1770370751&semt=ais_hybrid&w=740&q=80",
-        index: 13,
-        category: "gaming",
-        mainBlog: "Esports is growing into a global industry. Professional players earn through tournaments and sponsorships. Streaming platforms boost popularity. Competitive gaming is now a career option."
-    },
-    {
-        title: "VR Gaming Future",
-        desc: "How virtual reality is changing gaming.",
-        image: "https://img.freepik.com/free-vector/isometric-technology-futuristic-background_23-2149124520.jpg?ga=GA1.1.172384037.1770370751&semt=ais_hybrid&w=740&q=80",
-        index: 14,
-        category: "gaming",
-        mainBlog: "VR gaming creates immersive experiences for players. It uses motion tracking and 3D environments. Hardware is becoming more affordable. Future games will feel more realistic and interactive."
-    },
-    {
-        title: "Mobile Gaming Trends",
-        desc: "Growth of gaming on smartphones.",
-        image: "https://img.freepik.com/free-vector/mobile-games-flat-infographic-set-isolated-human-hands-playing-smartphone-relaxing-games-with-editable-text-vector-illustration_98292-9617.jpg?ga=GA1.1.172384037.1770370751&semt=ais_hybrid&w=740&q=80",
-        index: 15,
-        category: "gaming",
-        mainBlog: "Mobile gaming is the fastest-growing segment. Games are becoming more high-quality and competitive. Cloud gaming supports mobile devices. Easy access makes it popular worldwide."
-    },
-    {
-        title: "Study Hacks",
-        desc: "Smart ways to study effectively.",
-        image: "https://img.freepik.com/free-photo/book-laptop-pencil-clock-wooden-table-library-education-learning-concept_1150-16629.jpg?ga=GA1.1.172384037.1770370751&semt=ais_hybrid&w=740&q=80",
-        index: 16,
-        category: "productivity",
-        mainBlog: "Study hacks help improve learning speed and memory. Use active recall and spaced repetition. Avoid distractions while studying. Short study sessions improve retention."
-    },
-    {
-        title: "Work from Home Tips",
-        desc: "Stay productive while working remotely.",
-        image: "https://img.freepik.com/premium-vector/work-from-home-office-worker-sit-sofa-home-prevent-corona-virus_68708-837.jpg?ga=GA1.1.172384037.1770370751&semt=ais_hybrid&w=740&q=80",
-        index: 17,
-        category: "productivity",
-        mainBlog: "Working from home requires discipline and structure. Set a dedicated workspace for focus. Follow a fixed schedule daily. Take regular breaks to avoid fatigue."
-    },
-    {
-        title: "Goal Setting Guide",
-        desc: "How to set and achieve your goals.",
-        image: "https://img.freepik.com/free-photo/top-view-goals-written-note-with-notepad-pen-white-surface-job-office-school-copybook-color-college-business_179666-19781.jpg?ga=GA1.1.172384037.1770370751&semt=ais_hybrid&w=740&q=80",
-        index: 18,
-        category: "productivity",
-        mainBlog: "Setting clear goals improves success rate. Break big goals into smaller tasks. Track your progress regularly. Stay consistent and adjust plans when needed."
-    }
 
 ];
 
@@ -165,7 +91,7 @@ blogsData.forEach(data => {
                             </p>
                             <button class="button" onclick="change('${data.title}', '${data.mainBlog}', '${data.image}')">Read more</button>
                         </div>`;
-        cardsContTech.appendChild(card);
+        homeCardsContTech.appendChild(card);
     } else if (data.category === "gaming") {
         let card = document.createElement('div');
         card.classList.add("card")
@@ -177,7 +103,7 @@ blogsData.forEach(data => {
                             </p>
                             <button class="button" onclick="change('${data.title}', '${data.mainBlog}', '${data.image}')">Read more</button>
                         </div>`;
-        cardsContGaming.appendChild(card);
+        homeCardsContGaming.appendChild(card);
     } else if (data.category === "productivity") {
         let card = document.createElement('div');
         card.classList.add("card")
@@ -189,8 +115,10 @@ blogsData.forEach(data => {
                             </p>
                             <button class="button" onclick="change('${data.title}', '${data.mainBlog}', '${data.image}')">Read more</button>
                         </div>`;
-        cardsContProd.appendChild(card);
+        homeCardsContProd.appendChild(card);
     }
+
+
 });
 
 
@@ -198,3 +126,4 @@ blogsData.forEach(data => {
 function change(title, mainBlog, img) {
     window.location.href = `blog.html?title=${encodeURIComponent(title)}&mainBlog=${encodeURIComponent(mainBlog)}&image=${encodeURIComponent(img)}`;
 };
+
