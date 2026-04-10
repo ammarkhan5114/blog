@@ -437,9 +437,25 @@ section {
   ============================ */
 
 #contact-section {
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  margin: 0;
+}
+
+.backbtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#back {
+  font-size: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--accent-color);
 }
 
 form {
@@ -459,7 +475,7 @@ form {
 .input-group textarea {
   width: 100%;
   padding: 10px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #fff;
   background: transparent;
   border: none;
